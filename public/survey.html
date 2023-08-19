@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+   
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6 main">
+                <form action="/servey" method="POST">
+                    <h2>Servey Form</h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required />
+                    <br>
+                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
+                    <br>
+                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required />
+                    <br>
+                    <input type="text" class="box" id="rrn" name="rrn" placeholder="Enter Registration Number" required />
+                    <input type="text" class="box" id="nameco" name="nameco" placeholder="Enter College Name" required />
+                    <p><b>Select Your Favourite Programming Language</b></p>
+                    <input type="checkbox" id="java" name="java" value="JAVA">
+                    <label for="java"> JAVA</label><br>
+                    <input type="checkbox" id="python" name="python" value="PYTHON">
+                    <label for="python"> PYTHON</label><br>
+                    <input type="checkbox" id="cpp" name="cpp" value="CPP">
+                    <label for="cpp"> CPP</label><br>
+                    <input type="checkbox" id="other" name="other" value="Other">
+                    <label for="other"> Others</label><br>
+                    <h4>If not others [pls enter NA] :
+                        <input type="text" placeholder="Enter Language Name here" name="others" required></h4><br>
+                    <h4>Do You Like Programming</h4>
+                    <input type="radio" id="yes" name="option" value="yes">
+                    <label for="yes">YES</label>
+                    <input type="radio" id="no" name="option" value="no">
+                    <label for="no">NO</label>
+                    <br>
+                    <br>
+
+                    <input type="submit" value="Submit" id="submit" />
+                    
+                   
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
